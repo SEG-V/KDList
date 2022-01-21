@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Mono&display=swap');
+
+:root {
+    --dark-color: #072227;
+    --light-color: #DFFFFF;
+    --primary-color: #4FBDBA;
+    --secondary-color: #35858B;
+}
+
+.logo {
+    color: var(--dark-color);
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2px;
+    padding: 0.5rem;
+}
+
+html[data-theme='dark'] .logo {
+    color: var(--primary-color);
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+html[data-theme='dark'] .navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar-item {
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 2rem;
+}
+
+.navbar-logo {
+    padding: 0.5rem;
+}
+
+.padded-container {
+    padding: 1rem;
+}
+
+a {
+    color: #FFFFFF;
+}
+
+body {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    font-family: 'Roboto Mono', monospace;
+    padding: 0;
+    margin: 0;
+}
