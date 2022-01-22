@@ -12,18 +12,18 @@ export default function Navbar(props: NavbarProps) {
     return (
         <nav className="navbar">
             <div className="navbar-logo">
-                <Logo content={ props.brand } />
+                <Logo content={ props.brand } size={ 21 } />
             </div>
             <ul>
                 <li className="navbar-item">
-                    <a href="/">Home</a>
+                    <a className="navbar-link" href="/">Home</a>
                 </li>
                 <li className="navbar-item">
-                    <a href="/about">About</a>
+                    <a className="navbar-link" href="/about">About</a>
                 </li>
                 {
                     props.user.isGuest ? <li className="navbar-item">
-                        <a href="/login">Login</a>
+                        <a className="navbar-link" href="/login">Login</a>
                     </li> : <></>
                 }
             </ul>

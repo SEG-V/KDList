@@ -14,7 +14,7 @@
     padding: 0.5rem;
 }
 
-html[data-theme='dark'] .logo {
+[data-theme='dark'] .logo {
     color: var(--primary-color);
 }
 
@@ -24,7 +24,7 @@ html[data-theme='dark'] .logo {
     justify-content: space-between;
 }
 
-html[data-theme='dark'] .navbar {
+[data-theme='dark'] .navbar {
     background-color: var(--dark-color);
 }
 
@@ -32,6 +32,10 @@ html[data-theme='dark'] .navbar {
     display: inline-block;
     list-style-type: none;
     padding-right: 2rem;
+}
+
+.navbar-link {
+    color: var(--light-color);
 }
 
 .navbar-logo {
@@ -43,7 +47,7 @@ html[data-theme='dark'] .navbar {
 }
 
 a {
-    color: #FFFFFF;
+    color: var(--primary-color);
 }
 
 body {
@@ -52,4 +56,9 @@ body {
     font-family: 'Roboto Mono', monospace;
     padding: 0;
     margin: 0;
+}
+
+[data-theme='dark'] {
+    background-color: var(--dark-color);
+    color: var(--light-color);
 }
