@@ -1,3 +1,3 @@
 export interface User {
-    isGuest: boolean;
+	isGuest: boolean;
 }
