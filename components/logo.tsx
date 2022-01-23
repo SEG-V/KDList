@@ -17,33 +17,15 @@
 
 import React from 'react'
 
-import Logo from '~/components/logo.tsx'
-import { User } from '~/lib/interfaces.ts'
-
-interface NavbarProps {
-	brand: string;
-	user: User
+interface LogoProps {
+	content: string | JSX.Element;
+	size: number;
 }
 
-export default function Navbar(props: NavbarProps) {
+export default function Logo(props: LogoProps) {
 	return (
-		<nav className="navbar">
-			<div className="navbar-logo">
-				<Logo content={ props.brand } size={ 21 } />
-			</div>
-			<ul>
-				<li className="navbar-item">
-					<a className="navbar-link" href="/">Home</a>
-				</li>
-				<li className="navbar-item">
-					<a className="navbar-link" href="/about">About</a>
-				</li>
-				{
-					props.user.isGuest ? <li className="navbar-item">
-						<a className="navbar-link" href="/login">Login</a>
-					</li> : <></>
-				}
-			</ul>
-		</nav>
+		<div className="logo">
+			<span style={{ fontSize: `${props.size}px` }}>{ props.content }</span>
+		</div>
 	)
 }
