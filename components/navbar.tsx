@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Logo from '~/components/logo.tsx'
+import Icon from '~/components/icon.tsx'
 import { User } from '~/lib/interfaces.ts'
 
 interface NavbarProps {
@@ -12,7 +12,7 @@ export default function Navbar(props: NavbarProps) {
 	return (
 		<nav className="navbar">
 			<div className="navbar-logo">
-				<Logo content={ props.brand } size={ 21 } />
+				<Icon content={ props.brand } size={ 21 } />
 			</div>
 			<ul>
 				<li className="navbar-item">
